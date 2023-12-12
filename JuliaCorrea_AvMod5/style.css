@@ -1,112 +1,22 @@
 body {
-    background-image: url('caminho/para/sua/imagem.jpg');
-    background-size: cover;
-    color: #fff;
-}
-
-.navbar {
-    background-color: rgb(0, 0, 0);
-}
-
-.navbar-brand, .nav-link, .title-home, p {
-    color: #41033b;
-}
-
-.hover-rbw {
-    color: inherit;
-    text-decoration: none;
-    background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
-                linear-gradient(to right, rgb(240, 240, 52), rgb(255, 238, 0), rgb(197, 200, 0));
-    background-size: 100% 3px, 0 3px;
-    background-position: 100% 100%, 0 100%;
-    background-repeat: no-repeat;
-    transition: background-size 400ms;
-}
-
-.hover-rbw:hover {
-    background-size: 0 3px, 100% 3px;
-}
-
-/* Reset para remoção de margens/padding padrão */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
-/* Estilos para o layout */
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: plum;
+.header {
+    background-color: rgb(160, 187, 221);
     color: #fff;
+    margin: 0 0 0 20px;
+    text-align: left;
+    padding: 20px 0;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.logo h1 {
-    font-size: 24px;
-}
-
-.nav-links li {
-    display: inline;
-    margin-left: 15px;
-}
-
-.main {
-    padding: 20px;
-}
-
-.banner {
-    background-image: url('caminho/para/sua-imagem.jpg');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.banner h2 {
-    font-size: 36px;
-}
-
-.banner p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: plum;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-.section-heading {
-    color: #41033b;
-    margin-bottom: 30px;
-}
-
-.section-content {
-    color: #fff;
-}
-
-.product-card, .testimonial-card {
-    background-color: rgba(231, 89, 236, 0.3);
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .glow-on-hover {
@@ -175,6 +85,99 @@ footer {
     }
 }
 
+.navbar {
+    background-color: rgb(229, 194, 153);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #41033b;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 20px auto;
+    margin-left: 75px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h1,
+.form-container button {
+    margin-bottom: 20px;
+    color: #41033b;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #e678e0;
+    border-radius: 4px;
+    color: #000;
+}
+
+.form-container .error {
+    color: red;
+    font-size: 0.9em;
+    text-align: left;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.title-form {
+    color: #41033b;
+}
+
+.banner {
+    background-image: url('caminho/para/sua-imagem.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.banner h2 {
+    font-size: 36px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(229, 194, 153);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.section-heading {
+    color: #41033b;
+    margin-bottom: 30px;
+}
+
+.section-content {
+    color: #fff;
+}
+
+.product-card,
+.testimonial-card {
+    background-color: rgba(231, 89, 236, 0.3);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 .swiper {
     width: 100%;
 }
@@ -199,4 +202,76 @@ footer {
 .star {
     font-size: 24px;
     color: gold;
+}
+
+.hover-rbw {
+    background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+        linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.hover-rbw:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.u-list:not(.u-repeater) .u-repeater,
+.u-blog:not(.u-repeater) .u-repeater,
+.u-products:not(.u-repeater) .u-repeater {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+.hero-section {
+    background-image: url(../images/businessman-sitting-by-table-cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.d-flex {
+    display: flex!important;
+}
+
+.custom-btn {
+    background: var(--custom-btn-bg-color);
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-size: var(--btn-font-size);
+    font-weight: var(--font-weight-semibold);
+    line-height: normal;
+    transition: all 0.3s;
+    padding: 10px 20px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.contact-form button {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/templatemo-ebook-landing.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+     .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .video-container,
+    .contact-form {
+      width: 48%; 
+      margin-top: 130px;
+    }
+  </style>
+</head>
+
+
+<body>
+  <!-- Barra NAVE ESPACIAL -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <img style="width: 140px; margin-left: 700px;" src="logotipo.png" alt="patosemfundo">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" img>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="servicos.html">Receitas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactos.html">Contactos</a>
+        </li>
+        <li class="nav-item active" style="margin-top: 6px;">
+          <a style="color: white;" class="hover-rbw" href="login.html">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="video-container">
+      <iframe width="560" height="315" src="patodançante.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div style="margin-top: 70px;" class="contact-form form-container">
+      <form action="#" method="post">
+        <h1 class="title-form">Entre em Contato</h1>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+
+        <button class="glow-on-hover" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

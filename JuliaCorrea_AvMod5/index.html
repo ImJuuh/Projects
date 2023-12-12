@@ -6,41 +6,69 @@
 		<title>Site de Qualidade</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	</head>
 	<body>
 		<!-- Barra NAVE ESPACIAL -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-			<a class="navbar-brand" href="index.html">DUCKSHOP</a> 
-			<img style="width: 40px; margin-left: -16px;" src="pato-removebg-preview.png" alt="patosemfundo">
+			<img style="width: 140px; margin-left: 700px;" src="imagens/logotipo.png" alt="logotipo">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto"></ul>
+				<ul class="navbar-nav ml-auto" img>
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="paginaservicos.html">Roupas</a>
+						<a class="nav-link" href="servicos.html">Receitas</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contactos.html">Contactos</a>
 					</li>
 					<li class="nav-item active" style="margin-top: 6px;">
-						<a style="color: white;" class="hover-rbw" href="paginaformulario.html">Registar-se</a>
+						<a style="color: white;" class="hover-rbw" href="login.html">Login</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		<!-- Conteúdo da Página -->
-		<section style="margin-bottom: -120px;" class="section">
+		<!-- Slider main container -->
+		<div class="swiper">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<!-- Adicionado o estilo para a imagem ocupar toda a div -->
+					<img src="imagens/slide2.png" alt="Slide 1" style="width: 100%; height: 100%; object-fit: cover;">
+				</div>
+				<div class="swiper-slide">
+					<img src="imagens/slie1.png" alt="Slide 2" style="width: 100%; height: 100%; object-fit: cover;">
+				</div>
+				<div class="swiper-slide">
+					<img src="imagnes/slide2.png" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover;">
+				</div>
+				<div class="swiper-slide">
+					<img src="#" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover;">
+				</div>
+				<!-- ... Adicione mais slides conforme necessário ... -->
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<!-- If we need scrollbar -->
+			<div class="swiper-scrollbar"></div>
+		</div>
+		<section  style="margin-bottom: -120px;" class="section">
 			<div class="container">
 				<h2 style="margin-top: 20px;" class="section-heading">Bem-vindo à nossa loja!</h2>
 				<img style="width: 150px; height: auto;" src="patonatalacenar.gif">
 			</div>
 		</section>
-		<!-- Seção de Produtos -->4
+		<!-- Seção de Produtos -->
 		<section class="section">
 			<div class="container">
 				<h2 class="section-heading">Nossos Produtos</h2>
@@ -48,13 +76,31 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="product-card">
-							<h4 style="text-align: center;">Nome do Produto 1</h4>
-							<img src="imagem_produto_1.jpg" alt="Produto 1" style="width: 230px; height: auto;">
+							<h4 style="text-align: center;">Camisola de Malha</h4>
+							<br> 
+							<img src="patocamisolaquente.jpg" alt="roupamarinheiro" style="width: 230px; height: auto;">
 							<div style="color: #ff0303;" class="price">$ 10,99</div>
 							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
 						</div>
 					</div>
-					<!-- Adicione mais produtos conforme necessário -->
+					<div class="col-lg-4">
+						<div class="product-card">
+							<h4 style="text-align: center;">Pai Natal</h4>
+							<br> 
+							<img src="patonatal.jpg" alt="roupanatal" style="width: 230px; height: auto;">
+							<div style="color: #ff0303;" class="price">$ 18,99</div>
+							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="product-card">
+							<h4 style="text-align: center;">Elfo</h4>
+							<br> 
+							<img src="patoelfo.jpg" alt="roupaelfo" style="width: 230px; height: auto;">
+							<div style="color: #ff0303;" class="price">$ 14,00</div>
+							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -63,40 +109,143 @@
 			<div class="container">
 				<h2 class="section-heading">Feedback dos Clientes</h2>
 				<div class="swiper">
+					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper">
+						<!-- Slides -->
 						<div class="swiper-slide">
 							<div class="testimonial-card">
 								<div class="testimonial-content">
 									<div class="testimonial-image">
-										<img src="cliente1.jpg" alt="Imagem do Cliente" />
-										<h5 style="color: #41033b; margin-top: 10px;">Nome do Cliente 1</h5>
+										<img src="pato.jpeg" alt="Imagem do Cliente" />
+										<h5 style="color: #41033b; margin-top: 10px;">Suzy Cardon</h5>
 									</div>
 									<div class="testimonial-text">
-										<p>Feedback do Cliente 1</p>
+										<p>satisfeita</p>
 										<span class="star">&#9733;</span>
 										<span class="star">&#9733;</span>
 										<span class="star">&#9733;</span>
-										<span class="star">&#9733;</span>
-										<span class="star">&#9733;</span>
-										<!-- Adicione mais estrelas conforme necessário -->
 									</div>
 								</div>
 							</div>
 						</div>
-						<!-- Adicione mais depoimentos conforme necessário -->
+						<div class="swiper-slide">
+							<div class="testimonial-card">
+								<div class="testimonial-content">
+									<div class="testimonial-image">
+										<img src="pato.jpeg" alt="Imagem do Cliente" />
+										<h5 style="color: #41033b; margin-top: 10px;">Donald Mouse</h5>
+									</div>
+									<div class="testimonial-text">
+										<p>AMAZING</p>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>  
+										<span class="star">&#9733;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonial-card">
+								<div class="testimonial-content">
+									<div class="testimonial-image">
+										<img src="pato.jpeg" alt="Imagem do Cliente" />
+										<h5 style="color: #41033b; margin-top: 10px;">Margarida Tuffy</h5>
+									</div>
+									<div class="testimonial-text">
+										<p>Roupas com boa qualidade</p>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonial-card">
+								<div class="testimonial-content">
+									<div class="testimonial-image">
+										<img src="pato.jpeg" alt="Imagem do Cliente" />
+										<h5 style="color: #41033b; margin-top: 10px;">Toy Tuffy</h5>
+									</div>
+									<div class="testimonial-text">
+										<p>Roupas com boa qualidade</p>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="testimonial-card">
+								<div class="testimonial-content">
+									<div class="testimonial-image">
+										<img src="pato.jpeg" alt="Imagem do Cliente" />
+										<h5 style="color: #41033b; margin-top: 10px;">Reinaldo LOL</h5>
+									</div>
+									<div class="testimonial-text">
+										<p>Roupas top xuxa</p>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+										<span class="star">&#9733;</span>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="swiper-button-prev"></div>
 					<div class="swiper-button-next"></div>
 				</div>
 			</div>
 		</section>
-		<!-- Seu código do rodapé permanece o mesmo -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script>
 			const swiper = new Swiper('.swiper', {
-			    // Configurações do Swiper
+			// Optional parameters
+			direction: 'horizontal',
+			loop: true,
+			
+			// If we need pagination
+			pagination: {
+			el: '.swiper-pagination',
+			},
+			
+			// Navigation arrows
+			navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+			},
+			
+			autoplay: {
+			delay: 5000,
+			},
+			
+			slidesPerView: 1,
+			spaceBetween: 10,
+			
+			breakpoints: {
+			
+			'@1.00': {
+			slidesPerView: 2,
+			spaceBetween: 40,
+			},
+			'@1.50': {
+			slidesPerView: 3,
+			spaceBetween: 50,
+			},
+			}
+			
 			});
 		</script>
+		<footer>
+			<p>&copy; 2023 SHOP SA. Todos os direitos reservados.</p>
+		</footer>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
