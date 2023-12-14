@@ -11,7 +11,7 @@
 	<body>
 		<!-- Barra NAVE ESPACIAL -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-			<img style="width: 140px; margin-left: 700px;" src="imagens/logotipo.png" alt="logotipo">
+			<a href="index.html"><img style="width: 140px; margin-left: 700px;" src="imagens/logotipo.png" alt="logotipo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
@@ -32,6 +32,7 @@
 				</ul>
 			</div>
 		</nav>
+
 		<!-- Conteúdo da Página -->
 		<!-- Slider main container -->
 		<div class="swiperf">
@@ -39,30 +40,18 @@
 			<div class="swiper-wrapper">
 				<!-- Slides -->
 				<div class="swiper-slide">
-					<!-- Adicionado o estilo para a imagem ocupar toda a div -->
-					<img src="imagens/slide2.png" alt="Slide 1" style="width: 100%; height: 100%; object-fit: cover;">
+					<img src="imagens/slie1.png" alt="Slide 1" style="width: 100%; height: 100%; object-fit: cover;">
 				</div>
 				<div class="swiper-slide">
-					<img src="imagens/slie1.png" alt="Slide 2" style="width: 100%; height: 100%; object-fit: cover;">
+					<img src="imagens/slide2.png" alt="Slide 2" style="width: 100%; height: 100%; object-fit: cover;">
 				</div>
-				<div class="swiper-slide">
-					<img src="imagnes/slie1.png" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover;">
-				</div>
-				<div class="swiper-slide">
-					<img src="#" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover;">
-				</div>
-				<!-- ... Adicione mais slides conforme necessário ... -->
-			</div>
 			<!-- If we need pagination -->
 			<div class="swiper-pagination"></div>
-			<!-- If we need navigation buttons -->
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
 			<!-- If we need scrollbar -->
 			<div class="swiper-scrollbar"></div>
 		</div>
 		<script>
-		const fswiper = new Swiper('.swiperf', {
+			const fswiper = new Swiper('.swiperf', {
 			// Optional parameters
 			direction: 'horizontal',
 			loop: true,
@@ -86,25 +75,18 @@
 			spaceBetween: 10,
 			
 			breakpoints: {
-			
-			'@1.00': {
-			slidesPerView: 2,
-			spaceBetween: 40,
-			},
+
 			'@1.50': {
-			slidesPerView: 2,
-			spaceBetween: 20,
+			slidesPerView: 1,
+			spaceBetween: 50,
 			},
 			}
 			
 			});
 		</script>
-		
-
 		<section  style="margin-bottom: -120px;" class="section">
 			<div class="container">
-				<h2 style="margin-top: 20px;" class="section-heading">Bem-vindo à nossa loja!</h2>
-				<img style="width: 150px; height: auto;" src="patonatalacenar.gif">
+				<h2 class="section-heading">Bem-vindo à nossa loja!</h2>
 			</div>
 		</section>
 		<!-- Seção de Produtos -->
@@ -115,27 +97,27 @@
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="product-card">
-							<h4 style="text-align: center;">Camisola de Malha</h4>
+							<h4 style="text-align: center;">CheeseCake</h4>
 							<br> 
-							<img src="patocamisolaquente.jpg" alt="roupamarinheiro" style="width: 230px; height: auto;">
+							<img src="imagens/cheesecake.png" alt="cheesecake" style="width: 300px; height: auto; border-radius: 0.8rem;">
 							<div style="color: #ff0303;" class="price">$ 10,99</div>
 							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="product-card">
-							<h4 style="text-align: center;">Pai Natal</h4>
+							<h4 style="text-align: center;">Bolo Chocolate</h4>
 							<br> 
-							<img src="patonatal.jpg" alt="roupanatal" style="width: 230px; height: auto;">
+							<img src="imagens/bolochocolate.png" alt="bolochocolate" style="width: 300px; height: auto; border-radius: 0.8rem;">
 							<div style="color: #ff0303;" class="price">$ 18,99</div>
 							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="product-card">
-							<h4 style="text-align: center;">Elfo</h4>
+							<h4 style="text-align: center;">Roll</h4>
 							<br> 
-							<img src="patoelfo.jpg" alt="roupaelfo" style="width: 230px; height: auto;">
+							<img src="imagens/roll.png" alt="Pudim" style="width: 300px; height: auto; border-radius: 0.8rem;">
 							<div style="color: #ff0303;" class="price">$ 14,00</div>
 							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
 						</div>
@@ -210,7 +192,7 @@
 										<h5 style="color: #41033b; margin-top: 10px;">Toy Tuffy</h5>
 									</div>
 									<div class="testimonial-text">
-										<p>Roupas com boa qualidade</p>
+										<p>CheeseCakes Deliciosos</p>
 										<span class="star">&#9733;</span>
 										<span class="star">&#9733;</span>
 										<span class="star">&#9733;</span>

@@ -1,3 +1,4 @@
+<!-- receitas.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -11,7 +12,7 @@
 	<body>
 		<!-- Barra NAVE ESPACIAL -->
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-			<img style="width: 140px; margin-left: 700px;" src="imagens/logotipo.png" alt="logotipo">
+			<a href="index.html"><img style="width: 140px; margin-left: 700px;" src="imagens/logotipo.png" alt="logotipo"></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 			</button>
@@ -26,14 +27,109 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contactos.html">Contactos</a>
 					</li>
-					<li class="nav-item active" style="margin-top: 6px;">
-						<a style="color: white;" class="hover-rbw" href="login.html">Login</a>
+					<!-- Adicione o link para a página de administração -->
+					<li class="nav-item">
+						<a class="nav-link" href="add.php">Add +</a>
 					</li>
+					<!-- Fim do link para a página de administração -->
 				</ul>
 			</div>
 		</nav>
 		<!-- Conteúdo da Página -->
-		
+          <!-- Seção de Produtos -->
+          <section class="section">
+			<div class="container">
+				<h2 class="section-heading">Nossos Produtos</h2>
+				<h5 style="text-align: center; color: red;">DESTAQUE</h5>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="product-card">
+							<h4 style="text-align: center;">CheeseCake</h4>
+							<br> 
+							<img src="imagens/cheesecake.png" alt="cheesecake" style="width: 300px; height: auto; border-radius: 0.8rem;">
+							<div style="color: #ff0303;" class="price">$ 10,99</div>
+							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="product-card">
+							<h4 style="text-align: center;">Bolo Chocolate</h4>
+							<br> 
+							<img src="imagens/bolochocolate.png" alt="bolochocolate" style="width: 300px; height: auto; border-radius: 0.8rem;">
+							<div style="color: #ff0303;" class="price">$ 18,99</div>
+							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="product-card">
+							<h4 style="text-align: center;">Roll</h4>
+							<br> 
+							<img src="imagens/roll.png" alt="Pudim" style="width: 300px; height: auto; border-radius: 0.8rem;">
+							<div style="color: #ff0303;" class="price">$ 14,00</div>
+							<button style="margin-top: 10px;" class="glow-on-hover" type="submit">Comprar</button> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        <hr class="red-line">
+        <section class="section">
+            <div class="container">
+                <h2 class="section-heading">Outras Receitas</h2>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="product-card">
+                            <h4 class="type-text" style="text-align: center;">Bolachas</h4>
+                            <img src="imagens/bolochocolate.png" alt="Bolachas" class="product-image" style="border-radius: 0.8rem;">
+                            <div style="color: #000;" class="price">$ 9,99</div>
+                            <button class="glow-on-hover" type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product-card">
+                            <h4 class="type-text" style="text-align: center;">PutimFlam</h4>
+                            <img src="imagens/bolochocolate.png" alt="PutinFlam" class="product-image" style="border-radius: 0.8rem;">
+                            <div style="color: #000;" class="price">$ 39,99</div>
+                            <button class="glow-on-hover" type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product-card">
+                            <h4 class="type-text" style="text-align: center;">Doces</h4>
+                            <img src="imagens/bolochocolate.png" alt="Doces" class="product-image" style="border-radius: 0.8rem;">
+                            <div style="color: #000;" class="price">$ 32,99</div>
+                            <button class="glow-on-hover" type="submit">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="product-card">
+                            <h4 class="type-text" style="text-align: center;">Roupa StyleParty</h4>
+                            <img src="patostyle.jpg" alt="roupamarinheiro" class="product-image">
+                            <div style="color: #000;" class="price">$ 32,99</div>
+                            <button class="glow-on-hover" type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product-card">
+                            <h4 class="type-text" style="text-align: center;">Roupa S.Patrick</h4>
+                            <img src="patosorte.jpg" alt="roupaspratick" class="product-image">
+                            <div style="color: #000;" class="price">$ 12,99</div>
+                            <button class="glow-on-hover" type="submit">Comprar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="product-card">
+                            <h4 class="type-text" style="text-align: center;">Roupa Bombeiro</h4>
+                            <img src="patobombeiro.jpg" alt="roupamarinheiro" class="product-image">
+                            <div style="color: #000;" class="price">$ 18,50</div>
+                            <button class="glow-on-hover" type="submit">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 		<footer>
 			<p>&copy; 2023 SHOP SA. Todos os direitos reservados.</p>
 		</footer>
