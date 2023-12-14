@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -7,6 +9,16 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+		<?php
+		$visitado = isset($_COOKIE['visitado']) ? $_COOKIE['visitado'] : false;
+	
+		if (!$visitado) {
+			setcookie('visitado', '1', time() + 3600 * 24 * 30); // Válido por 30 dias
+			echo '<script>alert("Bem-vindo de volta! Este é o seu primeira visita.");</script>';
+		}
+		?>
+
 	</head>
 	<body>
 		<!-- Barra NAVE ESPACIAL -->
